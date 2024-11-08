@@ -58,6 +58,14 @@
             "fetch_status": true
           }
         },
+	      {
+          "background": "#6CA35E",
+          "foreground": "#ffffff",
+          "powerline_symbol": "\ue0b0",
+          "style": "powerline",
+          "template": " \ue718 {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }} ",
+          "type": "node"
+        },
         {
           "foreground": "red",
           "style": "plain",

@@ -23,7 +23,7 @@
 				{
 					"foreground": "darkGray",
 					"style": "plain",
-					"template": "{{ .Icon }} | ",
+					"template": "{{ .Icon }} |",
 					"type": "os",
 					"properties": {
 						"windows": "<blue>WIN</>",
@@ -31,14 +31,9 @@
 					}
 				},
 				{
-					"foreground": "red",
+					"foreground": "green",
 					"style": "plain",
-					"template": " % ",
-					"type": "root"
-				},
-				{
-					"style": "plain",
-					"template": "<cyan>{{ .UserName }}</><darkGray>@</><green>{{ .HostName }}</>",
+					"template": " {{ if .Root }}<red>{{ end }}{{ .UserName }}{{ if .Root }}</>{{ end }}<darkGray>@</><cyan>{{ .HostName }}</>",
 					"type": "session"
 				},
 				{
@@ -78,9 +73,9 @@
 			"newline": true,
 			"segments": [
 				{
-					"foreground": "lightRed",
+					"foreground": "green",
 					"style": "plain",
-					"template": "$",
+					"template": "{{ if .Root }}<red>{{ end }}${{ if .Root }}</>{{ end }}",
 					"type": "text"
 				}
 			],

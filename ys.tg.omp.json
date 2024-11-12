@@ -42,13 +42,13 @@
 						"style": "full"
 					},
 					"style": "plain",
-					"template": "<darkGray>:</>{{ .Path }} ",
+					"template": "<darkGray>:</>{{ .Path }}",
 					"type": "path"
 				},
 				{
 					"foreground": "#60ff60",
 					"style": "plain",
-					"template": "<darkGray>|</> Node {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }}",
+					"template": " <darkGray>|</> Node {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }}",
 					"type": "node"
 				},
 				{
